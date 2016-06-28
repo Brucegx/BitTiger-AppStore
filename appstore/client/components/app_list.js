@@ -11,7 +11,7 @@ class AppList extends Component {
   }
 
   handleButtonClick() {
-    Meteor.subscribe('employees', PER_PAGE * (this.page + 1));
+    Meteor.subscribe('apps', PER_PAGE * (this.page + 1));
     this.page += 1;
   }
 
